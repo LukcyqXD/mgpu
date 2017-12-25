@@ -1,0 +1,8 @@
+#!/bash/bin
+nvcc \
+-std=c++11 \
+--exp-extend-lambda \
+-gencode arch=compute_20,code=compute_20 \
+-I ./moderngpu/src \
+-o hello \
+hello.cu
